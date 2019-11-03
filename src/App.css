@@ -1,0 +1,16 @@
+.imgFormat {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.red {
+    color: red;
+}
+
