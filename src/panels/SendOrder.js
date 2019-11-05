@@ -1,6 +1,5 @@
 import React from 'react';
 import {Panel, PanelHeader} from '@vkontakte/vkui';
-import Spinner from "@vkontakte/vkui/dist/components/Spinner/Spinner";
 import PropTypes from 'prop-types';
 import Div from "@vkontakte/vkui/dist/components/Div/Div";
 

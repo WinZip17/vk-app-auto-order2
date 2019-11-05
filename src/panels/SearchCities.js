@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Panel, Group, PanelHeader, List, Cell, platform, Search, Div} from '@vkontakte/vkui';
+import {Panel, Group, PanelHeader, List, Cell, platform, Search, Div, FixedLayout} from '@vkontakte/vkui';
 import Icon24Done from '@vkontakte/icons/dist/24/done';
 import {IOS} from "@vkontakte/vkui/dist/es6";
 import Icon20Info from '@vkontakte/icons/dist/20/info';
@@ -45,9 +45,11 @@ class SearchCities extends Component {
 		let {id, go, fetchedUser, ...props} = this.props;
 		return (
 			<Panel id={id}>
-				<PanelHeader>Выберите город</PanelHeader>
-				<Group>
+				<PanelHeader noShadow>Выберите город</PanelHeader>
+				<FixedLayout vertical="top">
 					<Search value={this.state.search} onChange={this.onChange}/>
+				</FixedLayout>
+				<Group>
 					{this.props.сities.length > 0 &&
 					<List>
 						{this.сities.map((сities) => <Cell

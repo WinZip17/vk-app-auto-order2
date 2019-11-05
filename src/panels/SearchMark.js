@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Panel, Group, PanelHeader, List, Cell, platform, Search} from '@vkontakte/vkui';
+import {Panel, Group, PanelHeader, List, Cell, platform, Search, FixedLayout} from '@vkontakte/vkui';
 import Icon24Done from '@vkontakte/icons/dist/24/done';
 import {IOS} from "@vkontakte/vkui/dist/es6";
+
 
 const osname = platform();
 
@@ -75,13 +76,16 @@ class SearchMark extends Component {
 	}
 
 	render() {
+
 		let {id, go, fetchedUser, ...props} = this.props;
 
 		return (
 			<Panel id={id}>
-				<PanelHeader>Выберите марку</PanelHeader>
+				<PanelHeader noShadow>Выберите марку</PanelHeader>
+				<FixedLayout vertical="top">
+				<Search value={this.state.search} onChange={this.onChange}/>
+				</FixedLayout>
 				<Group>
-					<Search value={this.state.search} onChange={this.onChange}/>
 					{this.state.autoMark.length > 0 &&
 					<List>
 						{this.mark.map((mark) => <Cell
