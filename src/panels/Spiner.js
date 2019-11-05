@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const Spiner = props => (
 	<Panel id={props.id}>
-		<PanelHeader>Найти потеряшку</PanelHeader>
+		<PanelHeader>Разместить запрос</PanelHeader>
 		<div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
 			<Spinner size="large" style={{ marginTop: 20 }} />
 		</div>

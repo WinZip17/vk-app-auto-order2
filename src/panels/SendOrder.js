@@ -7,9 +7,9 @@ import Div from "@vkontakte/vkui/dist/components/Div/Div";
 
 const SendOrder = props => (
 	<Panel id={props.id}>
-		<PanelHeader>Найти потеряшку</PanelHeader>
+		<PanelHeader>Поиск автозапчастей</PanelHeader>
 		<Div>
-			<h1>Ваш опрос успешно добавлен!</h1>
+			<h1>Ваш запрос успешно отправлен, <br/> в ближайшее время с Вами свяжутся!</h1>
 		</Div>
 	</Panel>
 );
