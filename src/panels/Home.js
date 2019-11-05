@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Panel, Button, Group, Div,  PanelHeader, Input, FormLayout, Textarea} from '@vkontakte/vkui';
-import File from "@vkontakte/vkui/dist/components/File/File";
 import SelectMimicry from "@vkontakte/vkui/dist/es6/components/SelectMimicry/SelectMimicry";
-import Icon24Camera from '@vkontakte/icons/dist/24/camera';
+
 
 
 const Home = ({ id, go, fetchedUser, ...props }) => {
@@ -32,7 +31,6 @@ const Home = ({ id, go, fetchedUser, ...props }) => {
 							>{props.innquiryInfo.field5}</SelectMimicry>
 							<Input  top="6. Номер телефона" name="field6" value={props.innquiryInfo.field6}  onChange={props.changePhone}  type="text" />
 							<Textarea  top="Дополнительная инфоормация" name="field7" value={props.innquiryInfo.field7}  onChange={props.сhangeForms}  />
-							<File  onChange={props.сhangeForms} name="file"  type="file" before={<Icon24Camera />}  accept="image/*">Прикрепить </File>
 						</FormLayout>
 					</div>
 				</div>
